@@ -23,7 +23,7 @@ variable "region" {
    }
 
 variable "hostname" {
-   default = "webserver"
+   default = "webdev1"
    }
 
 variable "domain" {

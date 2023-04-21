@@ -81,6 +81,7 @@ resource "aws_ebs_volume" "data-vol" {
         Server = "${var.hostname}",
         Mounting = "/apps",
         Owner = "appadmin"
+        backup_policy = "daily"
         }
  }
 
@@ -92,6 +93,7 @@ resource "aws_ebs_volume" "log-vol" {
         Server = "${var.hostname}",
         Mounting = "/log",
         Owner = "appadmin"
+        backup_policy = "daily"
         }
  }
 # optional - let userdata to perform this task
